@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a0a0a">
+  <meta name="description" content="Fotografía callejera y documental de Pablo Guillén, fotógrafo afincado en Madrid.">
+  <title>Pablo Guillén — Fotografía</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="Pablo Guillén, fotografía, inicio">Pablo Guillén <span>—</span> Fotografía</a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir navegación">
+      <span></span><span></span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
+      <button class="nav-link is-current" type="button" data-view="authorial">No Photos, Please</button>
+      <button class="nav-link" type="button" data-view="street">Calle y proyectos</button>
+      <a class="nav-link" href="#about">Sobre mí</a>
+      <a class="nav-link" href="#contact">Contacto <span class="nav-arrow" aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="intro" aria-labelledby="intro-title">
+      <div class="intro-meta"><span>Madrid, España</span><span>Fotografía callejera y documental</span></div>
+      <h1 id="intro-title">Busco lo extraordinario<br><em>en lo cotidiano.</em></h1>
+      <div class="intro-bottom"><p>Personas siendo personas, en la calle y allá donde la vida se encuentra.</p><a href="#work" class="text-link">Ver selección <span aria-hidden="true">↓</span></a></div>
+    </section>
+
+    <section class="work-section" id="work" aria-labelledby="gallery-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow" id="gallery-kicker">Serie seleccionada <span class="eyebrow-dot"></span> 01 / 02</p>
+          <h2 id="gallery-title">No Photos, Please</h2>
+        </div>
+        <p class="gallery-count" aria-live="polite"></p>
+      </div>
+      <div class="series-description" id="series-description" aria-live="polite"></div>
+      <div class="filters" id="filters" aria-label="Filtros de calle y proyectos" hidden>
+        <button class="filter-button is-active" type="button" data-filter="all">Toda la calle</button>
+        <button class="filter-button" type="button" data-filter="Filandorra">Filandorra</button>
+        <button class="filter-button" type="button" data-filter="Vendimia">Vendimia</button>
+        <button class="filter-button" type="button" data-filter="Vivienda">Vivienda</button>
+        <button class="filter-button" type="button" data-filter="Resto">Resto</button>
+      </div>
+      <div class="photo-grid" id="photo-grid" aria-live="polite"></div>
+    </section>
+
+    <section class="about-section" id="about" aria-labelledby="about-title">
+      <div class="about-image-wrap">
+        <img src="./About%20Me/IMG_5125%20(2).webp" alt="Retrato del fotógrafo" loading="lazy">
+        <span class="image-caption">Detrás de la cámara</span>
+      </div>
+      <div class="about-copy">
+        <p class="eyebrow">Sobre mí</p>
+        <h2 id="about-title">La persona<br>detrás de la <em>cámara.</em></h2>
+        <p class="about-lead">Fotógrafo de calle y documental afincado en Madrid, España.</p>
+        <p>Cuando la gente me pregunta por qué fotografío, suelo responder que porque me gusta pasear con una cámara encima. Me paro a congelar todo lo que me llama la atención. Ver cómo las personas interactúan entre sí y con su entorno —cómo hacen su vida, trabajan, se relacionan y actúan juntas— es algo que siempre me ha fascinado.</p>
+        <p>Mi trabajo fotográfico se centra precisamente en eso: guardar imágenes sobre personas siendo personas, ya sea juntándose para luchar por una causa, organizándose para celebrar una fiesta o simplemente disfrutando de momentos compartidos.</p>
+        <p>Por eso mismo exploro cómo, a través de gestos, detalles u objetos, podemos descubrir la esencia de los sujetos aunque mantengan su anonimato y no les veamos el rostro. Este es el eje central de mi serie principal, «No Photos, Please».</p>
+        <p>Mi equipo de trabajo es una Canon EOS R10 junto a un 24mm, un par de filtros y, evidentemente, un buen par de zapatillas para aguantar las caminatas.</p>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+      <div>
+        <p class="eyebrow">¿Tienes algo en mente?</p>
+        <h2 id="contact-title">¿Hablamos<em>?</em></h2>
+      </div>
+      <div class="contact-details">
+        <a class="contact-link" href="https://instagram.com/fulgendump" target="_blank" rel="noreferrer"><span>Instagram</span><span>@fulgendump <span aria-hidden="true">↗</span></span></a>
+        <div class="contact-link"><span>Ubicación</span><span>Madrid, España</span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a class="wordmark" href="#top">Pablo Guillén <span>—</span> Fotografía</a><span>© <span id="year"></span> · Madrid, España</span><a href="#top">Volver arriba ↑</a></footer>
+
+  <dialog class="lightbox" id="lightbox" aria-label="Visor de fotografías">
+    <button class="lightbox-close icon-button" type="button" aria-label="Cerrar visor">×</button>
+    <button class="lightbox-prev icon-button" type="button" aria-label="Fotografía anterior">←</button>
+    <figure class="lightbox-figure">
+      <img class="lightbox-image" alt="">
+      <figcaption><span class="lightbox-caption"></span><span class="lightbox-index"></span></figcaption>
+    </figure>
+    <button class="lightbox-next icon-button" type="button" aria-label="Fotografía siguiente">→</button>
+  </dialog>
+</body>
+</html>
